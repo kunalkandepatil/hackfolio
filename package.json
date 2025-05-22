@@ -1,5 +1,6 @@
 {
   "name": "hackfolio",
+  "description": "Modern, minimal portfolio template designed for developers.",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
@@ -11,5 +12,13 @@
   },
   "dependencies": {
     "astro": "^5.7.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kunalkandepatil/hackfolio.git"
+  },
+  "author": {
+    "name": "Kunal KandePatil",
+    "url": "https://github.com/kunalkandepatil"
   }
 }

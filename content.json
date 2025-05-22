@@ -1,0 +1,83 @@
+{
+    "title": "kunalkandepatil ✦ developer, designer, creator",
+    "background": "/profile.jpg",
+    "header": {
+        "avatar": "/profile.jpg",
+        "name": "Kunal KandePatil",
+        "description": "B.TECH CSE ✦ FULL STACK DEVELOPER ✦ UI UX DESIGNER"
+    },
+    "about": "Founder Unburn | Versatile Full-Stack Developer with a strong foundation in React, JavaScript, Python, Node.js, Cloud, and UI/UX principles.",
+    "education": [
+        {
+            "institution": "JSPM University Pune",
+            "degree": "Bachelor of Technology, Artificial Intelligence & Machine Learning",
+            "year": "2024 - 2028",
+            "active": true
+        },
+        {
+            "institution": "Podar International School (CBSE)",
+            "degree": "School, Regular/General High School/Secondary Diploma Program",
+            "year": "2012 - 2021",
+            "active": false
+        }
+    ],
+    "skills": [
+        {
+            "language": "JavaScript",
+            "experience": 4,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        },
+        {
+            "language": "CSS",
+            "experience": 4,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        },
+        {
+            "language": "HTML",
+            "experience": 4,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        },
+        {
+            "language": "Python",
+            "experience": 2,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        },
+        {
+            "language": "TypeScript",
+            "experience": 4,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        }
+    ],
+    "frameworks": [
+        {
+            "language": "NodeJS",
+            "experience": 3,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        },
+        {
+            "language": "Figma",
+            "experience": 3,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        },
+        {
+            "language": "Git",
+            "experience": 4,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        },
+        {
+            "language": "React",
+            "experience": 3,
+            "color1": "#FD0053",
+            "color2": "#FD0053"
+        }
+    ],
+    "max_experience": 4
+}

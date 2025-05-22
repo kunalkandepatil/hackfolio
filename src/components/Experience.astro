@@ -1,0 +1,169 @@
+---
+import * as content from "../../content.json";
+---
+
+<section id="skills" class="container" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">SKILLS</h2>
+    <div class="exp-list">
+        {
+            content.skills.map((item, idx) => {
+                const percent =
+                    (item.experience / content.max_experience) * 100;
+                return (
+                    <div class="exp-row" key={item.language ?? idx}>
+                        <div class="exp-labels">
+                            <span
+                                class="exp-lang"
+                                style={`color: ${item.color1}`}
+                            >
+                                {item.language?.toUpperCase?.()}
+                            </span>
+                            <span class="exp-years">
+                                {item.experience} YEARS
+                            </span>
+                        </div>
+                        <div class="exp-bar-bg">
+                            <div
+                                class="exp-bar"
+                                data-width={`${percent}%`}
+                                style={`background: linear-gradient(180deg, ${item.color1}, ${item.color2}); width: 0;`}
+                            />
+                        </div>
+                    </div>
+                );
+            })
+        }
+
+        <h2 id="frameworks-heading">FRAMEWORKS</h2>
+        <div class="exp-list" aria-labelledby="frameworks-heading">
+            {
+                content.frameworks.map((item, idx) => {
+                    const percent =
+                        (item.experience / content.max_experience) * 100;
+                    return (
+                        <div class="exp-row" key={item.language ?? idx}>
+                            <div class="exp-labels">
+                                <span
+                                    class="exp-lang"
+                                    style={`color: ${item.color1}`}
+                                >
+                                    {item.language?.toUpperCase?.()}
+                                </span>
+                                <span class="exp-years">
+                                    {item.experience} YEARS
+                                </span>
+                            </div>
+                            <div class="exp-bar-bg">
+                                <div
+                                    class="exp-bar"
+                                    data-width={`${percent}%`}
+                                    style={`background: linear-gradient(180deg, ${item.color1}, ${item.color2}); width: 0;`}
+                                />
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</section>
+
+    <style>
+        .container {
+            margin-top: 50px;
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            border: 0.5px solid rgba(255, 255, 255, 0.21);
+            border-radius: 20px;
+            padding: 60px;
+            flex-direction: column;
+            box-sizing: border-box;
+            transition: border 0.3s ease;
+        }
+
+        .container:hover {
+            border: 0.5px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h2 {
+            font-family: "Oswald", sans-serif;
+            font-size: 30px;
+            color: white;
+            font-weight: 400;
+            text-shadow: -3px -3px 0px #fd0053;
+        }
+
+        .exp-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .exp-row {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .exp-labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+
+        .exp-lang {
+            font-family: "Oswald", sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .exp-years {
+            font-family: "Oswald", sans-serif;
+            font-size: 16px;
+            color: #444;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .exp-bar-bg {
+            width: 100%;
+            height: 20px;
+            background: #181818;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .exp-bar {
+            height: 100%;
+            border-radius: 8px;
+            transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 0;
+        }
+
+        .exp-bar.filled {
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+                margin-top: 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    </style>
+
+    <script src="../script/ExperienceBars.js"></script>
+</div>

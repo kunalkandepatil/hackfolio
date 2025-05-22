@@ -1,0 +1,15 @@
+{
+  "name": "hackfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "devTool": "astro preferences disable --global devToolbar"
+  },
+  "dependencies": {
+    "astro": "^5.7.12"
+  }
+}

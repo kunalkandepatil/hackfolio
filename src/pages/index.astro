@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import About from "../components/About.astro";
+import Education from "../components/Education.astro";
+import Experience from "../components/Experience.astro";
+import Temp from "../components/Temp.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+    <Header />
+    <main
+        class="hero"
+        id="main-content"
+        tabindex="-1"
+        aria-label="Main content"
+    >
+        <About />
+        <Education />
+        <Experience />
+        <Temp />
+        <Contact />
+    </main>
+    <Footer />
+    <style>
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 70%;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</Layout>

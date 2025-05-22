@@ -1,0 +1,113 @@
+---
+import { Image } from "astro:assets";
+import github_large from "../assets/github_large.svg";
+---
+
+<section
+    id="portfolio-cta"
+    class="container"
+    aria-labelledby="portfolio-cta-heading"
+>
+    <div class="watermark">
+        <Image alt="GitHub Logo" width="100" height="100" src={github_large} />
+    </div>
+    <h2 id="portfolio-cta-heading">
+        WANNA CREATE YOUR OWN<br />HACKFOLIO LIKE THIS?
+    </h2>
+    <p>Get the source code below by clicking on the button.</p>
+    <div style="margin-bottom: 40px;"></div>
+    <a
+        href="https://github.com/kunalkandepatil/hackfolio"
+        target="_blank"
+        rel="noopener"
+        aria-label="View source code on GitHub"
+    >
+        <button type="button" role="link">Create Your Own</button>
+    </a>
+</section>
+
+<style>
+    .container {
+        margin-top: 50px;
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        width: 100%;
+        border: 0.5px solid rgba(255, 255, 255, 0.21);
+        border-radius: 20px;
+        padding: 60px;
+        flex-direction: column;
+        box-sizing: border-box;
+        transition: border 0.3s ease;
+        overflow: hidden;
+    }
+
+    .container:hover {
+        border: 0.5px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .watermark img {
+        position: absolute;
+        top: -20px;
+        left: 30%;
+        width: 100%;
+        height: 450px;
+        user-select: none;
+        user-select: none;
+        pointer-events: none;
+        -webkit-user-drag: none;
+        rotate: -15deg;
+    }
+
+    h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        color: #fd0053;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    button {
+        padding: 10px 30px;
+        background: #fd0053;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        font-family: "Oswald", sans-serif;
+        font-size: 18px;
+        transition:
+            background 0.3s ease,
+            transform 0.2s ease;
+    }
+
+    button:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .watermark img {
+            position: absolute;
+            top: -20px;
+            left: 30%;
+            width: 100%;
+            height: 400px;
+            user-select: none;
+            rotate: -15deg;
+            opacity: 0.5;
+        }
+    }
+</style>

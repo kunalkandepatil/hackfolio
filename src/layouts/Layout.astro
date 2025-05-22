@@ -1,0 +1,82 @@
+---
+import * as content from "../../content.json";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Founder Unburn | Versatile Full-Stack Developer with a strong foundation in React, JavaScript, Python, Node.js, Cloud, and UI/UX principles." />
+	<meta name="keywords" content="Kunal KandePatil, Portfolio, Developer, Designer, Full Stack, React, Node.js, UI UX, Pune, India, Unburn" />
+	<meta name="author" content="Kunal KandePatil" />
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://kandepatilkunal.com/" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<meta name="theme-color" content="#FD0053" />
+	<meta name="generator" content={Astro.generator} />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+		rel="stylesheet"
+	/>
+	<title>{content.title}</title>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kandepatilkunal.com/" />
+	<meta property="og:title" content="kunalkandepatil ✦ developer, designer, creator" />
+	<meta property="og:description" content="Founder Unburn | Versatile Full-Stack Developer with a strong foundation in React, JavaScript, Python, Node.js, Cloud, and UI/UX principles." />
+	<meta property="og:image" content="/profile.jpg" />
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://kandepatilkunal.com/" />
+	<meta property="twitter:title" content="kunalkandepatil ✦ developer, designer, creator" />
+	<meta property="twitter:description" content="Founder Unburn | Versatile Full-Stack Developer with a strong foundation in React, JavaScript, Python, Node.js, Cloud, and UI/UX principles." />
+	<meta property="twitter:image" content="/profile.jpg" />
+	<!-- Structured Data -->
+	<script type="application/ld+json">{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Kunal KandePatil",
+	  "url": "https://kandepatilkunal.com/",
+	  "image": "/profile.jpg",
+	  "sameAs": [
+		"https://github.com/kunalkandepatil",
+		"https://www.linkedin.com/in/kunalkandepatil/"
+	  ],
+	  "jobTitle": "Full Stack Developer, UI/UX Designer",
+	  "worksFor": {
+		"@type": "Organization",
+		"name": "Unburn"
+	  }
+	}</script>
+</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		max-width: 1920px;
+		margin: 0;
+		width: 100%;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin: auto;
+		position: relative;
+	}
+
+	* {
+		color: white;
+		font-family: "Oswald", sans-serif;
+		font-size: 26px;
+		font-weight: 200;
+	}
+</style>

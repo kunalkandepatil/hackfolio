@@ -1,0 +1,160 @@
+---
+import * as content from "../../content.json";
+---
+
+<section id="education" class="container" aria-labelledby="education-heading">
+    <h2 id="education-heading">EDUCATION</h2>
+    {
+        content.education.map((item) => (
+            <div id="section" class={item.active ? "active" : ""}>
+                <div id="sub_section">
+                    <p id="sub_section_heading">{item.institution}</p>
+                    <p id="sub_section_info">{item.degree}</p>
+                </div>
+                <div
+                    id="section_year_badge"
+                    class={item.active ? "badge_active" : ""}
+                >
+                    {item.year}
+                </div>
+            </div>
+        ))
+    }
+</section>
+
+<style>
+    .container {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        border: 0.5px solid rgba(255, 255, 255, 0.21);
+        border-radius: 20px;
+        padding: 60px;
+        flex-direction: column;
+        box-sizing: border-box;
+        transition: border 0.3s ease;
+    }
+
+    .container:hover {
+        border: 0.5px solid rgba(255, 255, 255, 0.3);
+    }
+
+    h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 30px;
+        color: white;
+        margin: 0;
+        font-weight: 400;
+        text-shadow: -3px -3px 0px #fd0053;
+    }
+
+    p {
+        font-family: "Oswald", sans-serif;
+        font-size: 26px;
+        color: white;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    #section {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-end;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.06) 100%
+        );
+        border-radius: 20px;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px 15px 15px 0px;
+    }
+
+    .active {
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(253, 0, 83, 0.06) 100%
+        ) !important;
+    }
+
+    #sub_section {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #sub_section_heading {
+        font-size: 26px;
+        color: white;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    #sub_section_info {
+        font-size: 26px;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    #section_year_badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.08) 0%,
+            rgba(153, 153, 153, 0.08) 100%
+        );
+        border-radius: 8px;
+        font-size: 17px;
+        padding: 5px 20px;
+        min-width: 80px;
+    }
+
+    .badge_active {
+        background: linear-gradient(
+            180deg,
+            #fd0053 0%,
+            #fd0053 100%
+        ) !important;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #section {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #sub_section_heading {
+            font-size: 20px;
+        }
+
+        #sub_section_info {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        #section_year_badge {
+            font-size: 15px;
+            padding: 5px 10px;
+        }
+    }
+</style>

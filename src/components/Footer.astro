@@ -1,0 +1,69 @@
+---
+import { Image } from "astro:assets";
+import footer_mark from "../assets/footer_mark.svg";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="footer" aria-label="Site footer">
+    <Image src={footer_mark} alt="Footer Mark" class="hero-image" />
+    <p>© {year} Unburn ✦ Open Source Project</p>
+</footer>
+
+<style>
+    .footer {
+        margin-top: 300px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .footer img {
+        width: 100%;
+        position: absolute;
+        user-select: none;
+        pointer-events: none;
+        -webkit-user-drag: none;
+        margin: 0;
+        bottom: 0;
+    }
+
+    h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 40px;
+        color: white;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    p {
+        font-family: "Oswald", sans-serif;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        margin: 0;
+        font-weight: 200;
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            margin-top: 150px;
+            padding: 10px;
+        }
+        .container {
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
+</style>

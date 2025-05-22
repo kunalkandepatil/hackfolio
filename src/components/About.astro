@@ -1,0 +1,60 @@
+---
+import * as content from "../../content.json";
+---
+
+<section id="about" class="container" aria-labelledby="about-heading">
+    <h2 id="about-heading">ABOUT</h2>
+    <p>{content.about}</p>
+</section>
+
+<style>
+    .container {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        border: 0.5px solid rgba(255, 255, 255, 0.21);
+        border-radius: 20px;
+        padding: 60px;
+        flex-direction: column;
+        box-sizing: border-box;
+        transition: border 0.3s ease;
+    }
+
+    .container:hover {
+        border: 0.5px solid rgba(255, 255, 255, 0.3);
+    }
+
+    h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 30px;
+        color: white;
+        margin: 0;
+        font-weight: 400;
+        text-shadow: -3px -3px 0px #FD0053;
+    }
+
+    p {
+        font-family: "Oswald", sans-serif;
+        font-size: 26px;
+        color: white;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
+</style>

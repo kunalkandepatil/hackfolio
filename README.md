@@ -15,7 +15,7 @@
 
 ## ✦ Demo
 
-Check out a live demo: [kandepatilkunal.me](https://kandepatilkunal.me/)
+Check out a live demo: [kandepatilkunal.me](https://kunalkandepatil.me/)
 
 ## ✦ Getting Started
 

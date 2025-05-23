@@ -1,17 +1,15 @@
-<div style="text-align: center">
-<img src="public/header.jpg"/>
+<div align="center">
+  <img src="public/header.jpg"/>
+</div>
 
-<div style="margin: 20px 0px"></div>
+<p align="center"><b>Hackfolio</b> is a modern, minimal, and fully responsive portfolio template built with Astro. Designed for developers and creators, it helps you showcase your skills, experience, and projects with a clean and professional look.</p>
 
-<div><b>Hackfolio</b> is a modern, minimal, and fully responsive portfolio template built with Astro. Designed for developers and creators, it helps you showcase your skills, experience, and projects with a clean and professional look.</div>
-
-<div style="margin: 20px 0px"></div>
-
+<div align="center">
+  
 ![GitHub License](https://img.shields.io/github/license/kunalkandepatil/hackfolio?style=flat-square)
 ![GitHub deployments](https://img.shields.io/github/deployments/kunalkandepatil/hackfolio/Production?style=flat-square)
 ![GitHub Repo stars](https://img.shields.io/github/stars/kunalkandepatil/hackfolio?style=flat-square)
 
----
 </div>
 
 ## Features

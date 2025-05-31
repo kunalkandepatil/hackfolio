@@ -25,58 +25,58 @@
         {
             "language": "JavaScript",
             "experience": 4,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         },
         {
             "language": "CSS",
             "experience": 4,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         },
         {
             "language": "HTML",
             "experience": 4,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         },
         {
             "language": "Python",
             "experience": 2,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         },
         {
             "language": "TypeScript",
             "experience": 4,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         }
     ],
     "frameworks": [
         {
             "language": "NodeJS",
             "experience": 3,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         },
         {
             "language": "Figma",
             "experience": 3,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         },
         {
             "language": "Git",
             "experience": 4,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         },
         {
             "language": "React",
             "experience": 3,
-            "color1": "#FD0053",
-            "color2": "#FD0053"
+            "color1": "#006FFF",
+            "color2": "#006FFF"
         }
     ],
     "max_experience": 4
